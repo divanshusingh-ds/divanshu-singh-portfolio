@@ -4,393 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Divanshu Singh | Data Scientist Portfolio</title>
+    <meta name="description" content="Divanshu Singh — Aspiring Data Scientist. SQL, Python, Excel, Power BI projects portfolio.">
+    <meta name="author" content="Divanshu Singh">
+    <meta property="og:title" content="Divanshu Singh | Data Scientist Portfolio">
+    <meta property="og:description" content="Aspiring Data Scientist — SQL, Python, Excel, Power BI projects portfolio.">
+    <meta property="og:url" content="https://divanshusingh-ds.github.io/divanshu-singh-portfolio/">
     <!-- Google Fonts & Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
             font-family: 'Inter', sans-serif;
             background: #0a0a0a;
             color: #e0e0e0;
             line-height: 1.5;
-            scroll-behavior: smooth;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
 
         /* black-red theme */
         .hero {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 2rem;
-            margin-bottom: 3rem;
-            background: #111111;
-            border-radius: 2rem;
-            padding: 2rem;
+            display: flex; flex-wrap: wrap;
+            align-items: center; justify-content: space-between;
+            gap: 2rem; margin-bottom: 3rem;
+            background: #111111; border-radius: 2rem; padding: 2rem;
             border: 1px solid #2a2a2a;
             box-shadow: 0 20px 30px -15px rgba(0,0,0,0.5);
         }
-
         .hero-badge {
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #ff3b3b;
+            font-size: 0.85rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 2px; color: #ff3b3b;
             background: rgba(220, 38, 38, 0.15);
-            display: inline-block;
-            padding: 0.3rem 1rem;
-            border-radius: 40px;
-            margin-bottom: 1rem;
+            display: inline-block; padding: 0.3rem 1rem;
+            border-radius: 40px; margin-bottom: 1rem;
             border: 1px solid rgba(255, 59, 59, 0.3);
         }
-
         .hero-info h1 {
-            font-size: 3rem;
-            font-weight: 800;
+            font-size: 3rem; font-weight: 800;
             letter-spacing: -0.02em;
             background: linear-gradient(135deg, #ffffff, #ff5e5e);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-bottom: 0.5rem;
+            -webkit-background-clip: text; background-clip: text;
+            color: transparent; margin-bottom: 0.5rem;
         }
-
         .hero-info .title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #ff4d4d;
-            margin-bottom: 1rem;
-            letter-spacing: -0.2px;
+            font-size: 1.3rem; font-weight: 600;
+            color: #ff4d4d; margin-bottom: 1rem; letter-spacing: -0.2px;
         }
-
         .hero-info .desc {
-            color: #b0b0b0;
-            margin-bottom: 1.8rem;
-            max-width: 550px;
+            color: #b0b0b0; margin-bottom: 1.8rem; max-width: 550px;
         }
-
-        .btn-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
+        .btn-group { display: flex; flex-wrap: wrap; gap: 1rem; }
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.6rem;
-            padding: 0.7rem 1.8rem;
-            border-radius: 40px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: 0.25s ease;
-            font-size: 0.95rem;
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            padding: 0.7rem 1.8rem; border-radius: 40px;
+            font-weight: 700; text-decoration: none;
+            transition: 0.25s ease; font-size: 0.95rem;
         }
-
         .btn-primary {
-            background: #dc2626;
-            color: white;
+            background: #dc2626; color: white;
             border: 1px solid #dc2626;
             box-shadow: 0 4px 10px rgba(220, 38, 38, 0.2);
         }
-
         .btn-primary:hover {
-            background: #b91c1c;
-            border-color: #b91c1c;
+            background: #b91c1c; border-color: #b91c1c;
             transform: translateY(-2px);
             box-shadow: 0 12px 20px -8px rgba(220, 38, 38, 0.4);
         }
-
         .btn-outline {
-            background: transparent;
-            border: 1px solid #4a4a4a;
-            color: #e0e0e0;
+            background: transparent; border: 1px solid #4a4a4a; color: #e0e0e0;
         }
-
         .btn-outline:hover {
-            border-color: #dc2626;
-            background: rgba(220, 38, 38, 0.1);
-            color: #ff6b6b;
-            transform: translateY(-2px);
+            border-color: #dc2626; background: rgba(220, 38, 38, 0.1);
+            color: #ff6b6b; transform: translateY(-2px);
         }
-
-        .hero-avatar {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-        }
-
+        .hero-avatar { flex: 1; display: flex; justify-content: center; }
         .avatar-frame {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
+            width: 220px; height: 220px; border-radius: 50%;
             overflow: hidden;
             box-shadow: 0 0 0 4px #dc2626, 0 20px 30px -10px black;
-            background: #1f1f1f;
-            border: 2px solid #2a2a2a;
+            background: #1f1f1f; border: 2px solid #2a2a2a;
         }
-
         .avatar-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+            width: 100%; height: 100%; object-fit: cover; display: block;
         }
-
         .section {
-            background: #0f0f0f;
-            border-radius: 1.75rem;
-            padding: 2rem 2rem;
-            margin-bottom: 2rem;
+            background: #0f0f0f; border-radius: 1.75rem;
+            padding: 2rem 2rem; margin-bottom: 2rem;
             border: 1px solid #252525;
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
-
         .section-title {
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.7rem;
-            color: #f0f0f0;
+            font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem;
+            display: flex; align-items: center; gap: 0.7rem; color: #f0f0f0;
         }
-
-        .section-title i {
-            color: #dc2626;
-        }
-
+        .section-title i { color: #dc2626; }
         .section-sub {
-            color: #b9b9b9;
-            margin-bottom: 1.75rem;
-            border-left: 3px solid #dc2626;
-            padding-left: 1rem;
-            font-weight: 500;
+            color: #b9b9b9; margin-bottom: 1.75rem;
+            border-left: 3px solid #dc2626; padding-left: 1rem; font-weight: 500;
         }
-
-        /* SKILLS GRID WITH LOGOS */
+        /* SKILLS */
         .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.8rem;
-            justify-content: space-between;
+            display: flex; flex-wrap: wrap; gap: 1.8rem; justify-content: space-between;
         }
-
         .skill-card {
-            flex: 1;
-            min-width: 200px;
-            background: #161616;
-            padding: 1.5rem 1.2rem;
-            border-radius: 1.2rem;
-            border: 1px solid #2c2c2c;
-            transition: 0.2s;
-            text-align: center;
+            flex: 1; min-width: 200px; background: #161616;
+            padding: 1.5rem 1.2rem; border-radius: 1.2rem;
+            border: 1px solid #2c2c2c; transition: 0.2s; text-align: center;
         }
-
         .skill-card:hover {
-            border-color: #dc2626;
-            transform: translateY(-3px);
-            background: #1c1c1c;
+            border-color: #dc2626; transform: translateY(-3px); background: #1c1c1c;
         }
-
         .skill-icon {
-            font-size: 3rem;
-            margin-bottom: 0.8rem;
-            display: inline-block;
+            font-size: 3rem; margin-bottom: 0.8rem;
+            display: inline-block; transition: transform 0.2s ease;
         }
-
-        /* custom colors for each logo */
-        .skill-card:nth-child(1) .skill-icon { color: #f29111; } /* SQL橙色 */
-        .skill-card:nth-child(2) .skill-icon { color: #3776ab; } /* Python蓝 */
-        .skill-card:nth-child(3) .skill-icon { color: #1d6f42; } /* Excel绿 */
-        .skill-card:nth-child(4) .skill-icon { color: #f2c811; } /* Power BI黄 */
-
+        .skill-sql .skill-icon { color: #f29111; }
+        .skill-python .skill-icon { color: #3776ab; }
+        .skill-excel .skill-icon { color: #1d6f42; }
+        .skill-powerbi .skill-icon { color: #f2c811; }
         .skill-card h3 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-            color: #ff5e5e;
+            font-size: 1.4rem; font-weight: 700;
+            margin-bottom: 0.75rem; color: #ff5e5e;
         }
+        .skill-detail { font-size: 0.9rem; color: #c0c0c0; line-height: 1.4; }
+        .skill-card:hover .skill-icon { transform: scale(1.05); }
 
-        .skill-detail {
-            font-size: 0.9rem;
-            color: #c0c0c0;
-            line-height: 1.4;
-        }
-
-        /* projects grid */
+        /* PROJECTS */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.8rem;
-            margin-top: 1rem;
+            gap: 1.8rem; margin-top: 1rem;
         }
-
         .project-card {
-            background: #111111;
-            border-radius: 1.2rem;
-            overflow: hidden;
-            border: 1px solid #2a2a2a;
-            transition: all 0.25s;
+            background: #111111; border-radius: 1.2rem; overflow: hidden;
+            border: 1px solid #2a2a2a; transition: all 0.25s;
         }
-
         .project-card:hover {
-            transform: translateY(-6px);
-            border-color: #dc2626;
+            transform: translateY(-6px); border-color: #dc2626;
             box-shadow: 0 15px 25px -12px rgba(220, 38, 38, 0.25);
         }
-
         .project-img {
-            width: 100%;
-            height: 180px;
-            background: #1e1e1e;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
+            width: 100%; height: 180px; background: #1e1e1e;
+            display: flex; align-items: center; justify-content: center;
+            background-size: cover; background-position: center;
+            background-repeat: no-repeat; position: relative;
+            transition: 0.2s; min-height: 180px;
         }
-
-        .project-content {
-            padding: 1.3rem 1.2rem 1.5rem;
-        }
-
+        .project-content { padding: 1.3rem 1.2rem 1.5rem; }
         .project-content h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: #ff6b6b;
+            font-size: 1.25rem; font-weight: 700;
+            margin-bottom: 0.5rem; color: #ff6b6b;
         }
-
         .project-content p {
-            color: #b0b0b0;
-            font-size: 0.9rem;
-            margin-bottom: 1.2rem;
+            color: #b0b0b0; font-size: 0.9rem; margin-bottom: 1.2rem;
         }
-
         .github-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 600;
-            font-size: 0.85rem;
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            font-weight: 600; font-size: 0.85rem;
             background: rgba(220, 38, 38, 0.1);
-            padding: 0.45rem 1.2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            color: #ff9b9b;
-            transition: 0.2s;
+            padding: 0.45rem 1.2rem; border-radius: 30px;
+            text-decoration: none; color: #ff9b9b; transition: 0.2s;
             border: 1px solid rgba(220,38,38,0.3);
         }
-
-        .github-link i {
-            font-size: 0.9rem;
-        }
-
         .github-link:hover {
-            background: #dc2626;
-            color: white;
-            border-color: #dc2626;
+            background: #dc2626; color: white; border-color: #dc2626;
         }
-
         .about-text {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            font-size: 1rem;
-            color: #cfcfcf;
-            max-width: 800px;
+            display: flex; flex-direction: column; gap: 1rem;
+            font-size: 1rem; color: #cfcfcf; max-width: 800px;
         }
-
         .contact-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 1rem;
+            display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem;
         }
-
         .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            font-size: 0.95rem;
-            background: #131313;
-            padding: 0.7rem 1.3rem;
-            border-radius: 60px;
-            border: 1px solid #2e2e2e;
-            transition: 0.2s;
-            text-decoration: none;
-            color: #e0e0e0;
+            display: flex; align-items: center; gap: 0.8rem;
+            font-size: 0.95rem; background: #131313;
+            padding: 0.7rem 1.3rem; border-radius: 60px;
+            border: 1px solid #2e2e2e; transition: 0.2s;
+            text-decoration: none; color: #e0e0e0;
         }
-
-        .contact-item i {
-            font-size: 1.4rem;
-            color: #dc2626;
-        }
-
+        .contact-item i { font-size: 1.4rem; color: #dc2626; }
         .contact-item:hover {
-            background: #1f1f1f;
-            border-color: #dc2626;
-            transform: translateY(-2px);
-            color: white;
+            background: #1f1f1f; border-color: #dc2626;
+            transform: translateY(-2px); color: white;
         }
-
         .quote {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background: #0c0c0c;
-            border-radius: 2rem;
-            font-style: italic;
-            font-weight: 500;
-            color: #e0e0e0;
-            border-left: 5px solid #dc2626;
-            border-right: 1px solid #2a2a2a;
+            text-align: center; margin-top: 2rem; padding: 1.5rem;
+            background: #0c0c0c; border-radius: 2rem;
+            font-style: italic; font-weight: 500;
+            color: #e0e0e0; border-left: 5px solid #dc2626;
             font-size: 1rem;
         }
-
         footer {
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.8rem;
-            color: #888;
-            border-top: 1px solid #232323;
-            margin-top: 1rem;
+            text-align: center; padding: 1.5rem;
+            font-size: 0.8rem; color: #888;
+            border-top: 1px solid #232323; margin-top: 1rem;
         }
-
         @media (max-width: 780px) {
-            .hero {
-                flex-direction: column-reverse;
-                text-align: center;
-            }
-            .hero-info .desc {
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .btn-group {
-                justify-content: center;
-            }
-            .section-title {
-                font-size: 1.5rem;
-            }
-            .skills-grid {
-                flex-direction: column;
-            }
+            .hero { flex-direction: column-reverse; text-align: center; }
+            .hero-info .desc { margin-left: auto; margin-right: auto; }
+            .btn-group { justify-content: center; }
+            .section-title { font-size: 1.5rem; }
+            .skills-grid { flex-direction: column; }
         }
     </style>
 </head>
@@ -415,31 +231,27 @@
         </div>
     </div>
 
-    <!-- SKILLS section with official logos -->
+    <!-- SKILLS section -->
     <div class="section">
         <div class="section-title"><i class="fas fa-code"></i> MY SKILLS</div>
-        <div class="section-sub">Technologies | Work With — Tools & Stack</div>
+        <div class="section-sub">Technologies I Work With — Tools & Stack</div>
         <div class="skills-grid">
-            <!-- SQL Logo (Font Awesome database + custom) -->
-            <div class="skill-card">
+            <div class="skill-card skill-sql">
                 <div class="skill-icon"><i class="fas fa-database"></i></div>
                 <h3>SQL</h3>
                 <div class="skill-detail">Joins, Window Functions, Aggregations, Complex Queries</div>
             </div>
-            <!-- Python Logo -->
-            <div class="skill-card">
+            <div class="skill-card skill-python">
                 <div class="skill-icon"><i class="fab fa-python"></i></div>
                 <h3>Python</h3>
                 <div class="skill-detail">Pandas, NumPy, Matplotlib, Scikit-learn</div>
             </div>
-            <!-- Excel Logo (file-excel) -->
-            <div class="skill-card">
+            <div class="skill-card skill-excel">
                 <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
                 <h3>Excel</h3>
                 <div class="skill-detail">Pivot Tables, Dashboards, Advanced Formulas</div>
             </div>
-            <!-- Power BI Logo (chart-line / custom) -->
-            <div class="skill-card">
+            <div class="skill-card skill-powerbi">
                 <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
                 <h3>Power BI</h3>
                 <div class="skill-detail">Data Visualization, DAX, Interactive Reports</div>
@@ -447,30 +259,30 @@
         </div>
     </div>
 
-    <!-- PROJECTS section with amazon.png, bmw.png -->
+    <!-- PROJECTS -->
     <div class="section" id="projects">
         <div class="section-title"><i class="fas fa-rocket"></i> MY PROJECTS</div>
         <div class="section-sub">Projects I've Built — Real world impact</div>
         <div class="projects-grid">
-            <!-- Project 1: Employee Salary Analysis -->
+            <!-- Project 1 -->
             <div class="project-card">
                 <div class="project-img" id="imgProj1" style="background-image: url('amazon.png'); background-size: cover; background-position: center;"></div>
                 <div class="project-content">
                     <h3>📊 Employee Salary Analysis</h3>
                     <p>Analyzed employee salary trends using SQL (joins, aggregations, window functions). Extracted actionable insights for HR dashboards.</p>
-                    <a href="https://github.com/singhdivanshu455-star" target="_blank" class="github-link"><i class="fab fa-github"></i> View on GitHub</a>
+                    <a href="https://github.com/divanshusingh-ds" target="_blank" class="github-link"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
             </div>
-            <!-- Project 2: Sales Dashboard with bmw.png -->
+            <!-- Project 2 -->
             <div class="project-card">
                 <div class="project-img" id="imgProj2" style="background-image: url('bmw.png'); background-size: cover; background-position: center;"></div>
                 <div class="project-content">
                     <h3>📈 Sales Dashboard (Excel)</h3>
                     <p>Interactive sales dashboard built with pivot tables, slicers, and dynamic charts. Track KPIs and performance metrics in real-time.</p>
-                    <a href="https://github.com/singhdivanshu455-star" target="_blank" class="github-link"><i class="fab fa-github"></i> View on GitHub</a>
+                    <a href="https://github.com/divanshusingh-ds" target="_blank" class="github-link"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
             </div>
-            <!-- Project 3: Data Cleaning Pipeline -->
+            <!-- Project 3 -->
             <div class="project-card">
                 <div class="project-img" id="imgProj3" style="background: linear-gradient(145deg, #2d0a0a, #1a1a1a); display: flex; align-items: center; justify-content: center; color: #dc2626; font-size: 2rem;">
                     <i class="fas fa-broom"></i> <span style="margin-left: 8px;">Python Clean</span>
@@ -478,13 +290,13 @@
                 <div class="project-content">
                     <h3>🧹 Data Cleaning Pipeline</h3>
                     <p>Cleaned and preprocessed raw data using Python (Pandas, NumPy). Handled missing values, outliers, and formatted for ML models.</p>
-                    <a href="https://github.com/singhdivanshu455-star" target="_blank" class="github-link"><i class="fab fa-github"></i> View on GitHub</a>
+                    <a href="https://github.com/divanshusingh-ds" target="_blank" class="github-link"><i class="fab fa-github"></i> View on GitHub</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ABOUT ME section -->
+    <!-- ABOUT ME -->
     <div class="section">
         <div class="section-title"><i class="fas fa-user-astronaut"></i> ABOUT ME</div>
         <div class="section-sub">Get to Know Me — Divanshu Singh (Deepu)</div>
@@ -495,13 +307,13 @@
         </div>
     </div>
 
-    <!-- CONTACT section with correct info -->
+    <!-- CONTACT -->
     <div class="section" id="contact">
         <div class="section-title"><i class="fas fa-envelope-open-text"></i> CONTACT</div>
         <div class="section-sub">Let's Connect — Let's build something great</div>
         <div class="contact-links">
             <a href="https://www.linkedin.com/in/divanshu-singh025" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> linkedin.com/in/divanshu-singh025</a>
-            <a href="https://github.com/singhdivanshu455-star" target="_blank" class="contact-item"><i class="fab fa-github"></i> github.com/singhdivanshu455-star</a>
+            <a href="https://github.com/divanshusingh-ds" target="_blank" class="contact-item"><i class="fab fa-github"></i> github.com/divanshusingh-ds</a>
             <a href="mailto:singhdivanshu455@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> singhdivanshu455@gmail.com</a>
         </div>
     </div>
@@ -511,14 +323,13 @@
         <i class="fas fa-fire" style="margin-right: 10px; color:#dc2626;"></i> "Data is the new oil, but insights are the real power." — Divanshu Singh
     </div>
     <footer>
-        © 2026 Divanshu Singh — Aspiring Data Scientist | Black & Red Theme
+        © 2025 Divanshu Singh — Aspiring Data Scientist | Black & Red Theme
     </footer>
 </div>
 
-<!-- script for handling amazon.png / bmw.png fallback, and ensure logos are visible -->
+<!-- script for handling amazon.png / bmw.png fallback -->
 <script>
     (function handleImagesAndIcons() {
-        // Helper to set fallback for project images when amazon.png or bmw.png missing
         function setImageFallback(element, labelText, iconClass) {
             if (!element) return;
             element.style.backgroundImage = 'none';
@@ -537,17 +348,10 @@
         const proj2 = document.getElementById('imgProj2');
 
         function testImage(url, element, fallbackLabel, icon) {
-            if (!url) {
-                setImageFallback(element, fallbackLabel, icon);
-                return;
-            }
+            if (!url) { setImageFallback(element, fallbackLabel, icon); return; }
             const imgTest = new Image();
-            imgTest.onload = () => {
-                if (element) element.style.backgroundImage = `url('${url}')`;
-            };
-            imgTest.onerror = () => {
-                setImageFallback(element, fallbackLabel, icon);
-            };
+            imgTest.onload = () => { if (element) element.style.backgroundImage = `url('${url}')`; };
+            imgTest.onerror = () => { setImageFallback(element, fallbackLabel, icon); };
             imgTest.src = url;
         }
 
@@ -567,7 +371,6 @@
             testImage(bgUrl2, proj2, 'Excel Dashboard', 'fas fa-chart-pie');
         }
 
-        // profile picture robust fallback
         const profilePic = document.querySelector('.avatar-frame img');
         if (profilePic) {
             profilePic.onerror = function() {
@@ -578,38 +381,12 @@
     })();
 </script>
 <style>
-    .project-img i, .project-img span {
-        text-shadow: 0 1px 2px black;
-    }
-    .project-img {
-        transition: 0.2s;
-        min-height: 180px;
-    }
-    a {
-        transition: 0.2s;
-    }
-    ::selection {
-        background: #dc2626;
-        color: white;
-    }
-    ::-webkit-scrollbar {
-        width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-        background: #111;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #dc2626;
-        border-radius: 10px;
-    }
-    /* additional hover enhancement for skill icons */
-    .skill-card:hover .skill-icon {
-        transform: scale(1.05);
-        transition: transform 0.2s ease;
-    }
-    .skill-icon {
-        transition: transform 0.2s ease;
-    }
+    .project-img i, .project-img span { text-shadow: 0 1px 2px black; }
+    a { transition: 0.2s; }
+    ::selection { background: #dc2626; color: white; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #111; }
+    ::-webkit-scrollbar-thumb { background: #dc2626; border-radius: 10px; }
 </style>
 </body>
 </html>
